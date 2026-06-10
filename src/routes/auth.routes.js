@@ -8,4 +8,6 @@ router.post('/register', authController.registerUser)  //route for user registra
 
 router.post('/login', authController.loginUser)  //route for user login, when a post request is made to /login, the loginUser function from authController will be called
 
+router.post('/logout', authController.logoutUser) // route for user logout
+
 module.exports = router;
